@@ -21,12 +21,45 @@ This repository contains **5 classic arcade games** that can be controlled using
 
 ## Requirements
 
-- Python 3.x  
-- Pygame  
-- OpenCV (`opencv-python`)  
-- Mediapipe  
+* Python 3.x  
+* Pygame  
+* OpenCV (`opencv-python`)  
+* Mediapipe  
 
 Install dependencies using:
 
 ```bash
 pip install pygame opencv-python mediapipe
+````
+
+## How to Run
+
+Run any game with:
+
+```bash
+python <game_file>.py
+```
+
+For example:
+
+```bash
+python dx_game.py
+```
+
+Make sure your webcam is connected and accessible.
+
+## Controls
+
+All games use **hand gestures** detected by Mediapipe:
+
+* **DX Ball:** Move paddle left/right with your hand.
+* **Flappy Bird:** One jump per finger raise.
+* **Fruit Ninja:** Slice fruits with your finger.
+* **Snake:** Move the snake in the desired direction.
+* **Tetris:** Move blocks left/right using finger position.
+
+## Notes
+
+* For best experience, keep your hand visible to the webcam.
+* Lighting conditions affect gesture detection accuracy.
+* Adjust game difficulty or sensitivity by modifying the respective game files.
